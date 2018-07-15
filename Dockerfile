@@ -16,15 +16,11 @@ RUN apk --no-cache add python \
     libsodium \
     wget
 
-RUN git clone https://github.com/snooda/net-speeder.git net-speeder
-WORKDIR net-speeder
-RUN sh build.sh
-RUN mv net_speeder /usr/local/bin/
-RUN /usr/local/bin/net_speeder
-
 RUN mkdir -p $WORK && \
-    wget -qO- --no-check-certificate https://raw.githubusercontent.com/8035258/ssr/master/ssr-master.tar.gz | tar -xzf - -C $WORK
+    wget -qO- --no-check-certificate https://raw.githubusercontent.com/8035258/xie/master/ssr-master.tar.gz | tar -xzf - -C $WORK
 WORKDIR $WORK/ssr-master/shadowsocks
+RUN sh build.sh
+RUN net_speeder
 
 EXPOSE $SERVER_PORT/TCP
 EXPOSE $SERVER_PORT/UDP
