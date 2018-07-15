@@ -6,7 +6,7 @@ ENV LOCAL_PORT      1898
 ENV PASSWORD=
 ENV METHOD          aes-128-ctr
 ENV PROTOCOL        auth_aes128_md5
-ENV OBFS            http_simple
+ENV OBFS            tls1.2_ticket_auth
 ENV TIMEOUT         120
 ENV UDP_TIMEOUT     60
 ENV FAST_OPEN       true
