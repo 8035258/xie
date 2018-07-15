@@ -17,8 +17,8 @@ RUN apk --no-cache add python \
     wget
 
 RUN mkdir -p $WORK && \
-    wget -qO- --no-check-certificate https://raw.githubusercontent.com/8035258/xie/master/ssr-master.tar.gz | tar -xzf - -C $WORK
-WORKDIR $WORK/ssr-master/shadowsocks
+    wget -qO- --no-check-certificate https://raw.githubusercontent.com/8035258/xie/master/xie-master.tar.gz | tar -xzf - -C $WORK
+WORKDIR $WORK/xie-master/shadowsocks
 RUN sh build.sh
 RUN net_speeder
 
