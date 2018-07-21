@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.7
 
 ENV SERVER          0.0.0.0
 ENV SERVER_PORT     8981
