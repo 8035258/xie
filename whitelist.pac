@@ -9343,6 +9343,7 @@ var white_domains = {
 "sitall":1,
 "sjyzc":1,
 "smjy":1,
+"smtcdns":1,
 "sohu":1,
 "songshuhui":1,
 "sosoo":1,
