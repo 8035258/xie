@@ -231,6 +231,8 @@ var white_domains = {
 },"com":{
 "sigma-rt":1,
 "ourdvsss":1,
+"githubapp":1,
+"githubusercontent":1,
 "4006024680":1,
 "baidupan":1,
 "lanzou":1,
@@ -8604,6 +8606,7 @@ var white_domains = {
 "i1515":1
 },"net":{
 "clewm":1,
+"fuliba":1,
 "baizhan":1,
 "funshion":1,
 "cibntv":1,
