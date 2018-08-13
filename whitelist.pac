@@ -231,6 +231,7 @@ var white_domains = {
 },"com":{
 "sigma-rt":1,
 "ourdvsss":1,
+"bing":1,
 "githubapp":1,
 "githubusercontent":1,
 "4006024680":1,
