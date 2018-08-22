@@ -21,4 +21,4 @@ RUN mkdir -p $WORK && \
 
 WORKDIR $WORK/xie-master/shadowsocks
 
-CMD python server.py -p $SERVER_PORT -k $PASSWORD -m $METHOD -O $PROTOCOL -o $OBFS
+RUN mkdir /root/kcptun
