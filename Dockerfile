@@ -30,3 +30,4 @@ RUN mkdir -p $WORK && \
 WORKDIR $WORK/kcptun
 
 CMD server_linux_amd64 -t $TARGET -l $LISTEN -mode $MODE
+
