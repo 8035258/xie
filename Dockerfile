@@ -2,7 +2,6 @@ FROM alpine:3.7
 
 ENV SERVER          0.0.0.0
 ENV SERVER_PORT     8981
-ENV LOCAL_PORT      1989
 ENV PASSWORD=
 ENV METHOD          aes-128-ctr
 ENV PROTOCOL        auth_aes128_md5
@@ -17,10 +16,10 @@ RUN apk --no-cache add python \
     wget
 
 RUN mkdir -p $WORK && \
-    wget -qO- --no-check-certificate https://raw.githubusercontent.com/8035258/xie/master/ssr-master.tar.gz | tar -xzf - -C $WORK
+    wget -qO- --no-check-certificate https://raw.githubusercontent.com/8035258/xie/master/xie-master.tar.gz | tar -xzf - -C $WORK
 
 
-WORKDIR $WORK/ssr-master/shadowsocks
+WORKDIR $WORK/xie-master/shadowsocks
 
 
 EXPOSE $SERVER_PORT/TCP
